@@ -1,0 +1,20 @@
+.box1{
+    background-color: skyblue;/*background-color:배경색;*/
+    width: 100px; /*가로길이 조절 width: ;*/
+    height: 100px; /*높이 조절 height: ;*/
+    border: 5px solid black; /*border: px 방식 색깔;*/
+    /*특징으로 박스의 내용물은 바뀌지 않는데 크기는 더 늘어난다. */
+    /*따라서 해결책으로 width 와 height 를 조절하여 크기를 맞춰준다.*/
+    padding:20px /*테두리와 내용물 사이에 있는 빈틈 padding: 크기px;*/
+    margin:20px; /*상자 밖에 영역을 관리하는 요소 margin:크기px*/
+}
+
+
+.box2
+{
+    background-color: violet;
+    width:100px; /*가로길이 조절 width: ;*/
+    height:100px; /*높이 조절 height: ;*/
+    border:5px solid purple; /*border: px 방식 색깔;*/
+    padding:20px /*테두리와 내용물 사이에 있는 빈틈 padding: 크기px;*/
+}

@@ -1,0 +1,125 @@
+/*외부 폰트를 사용하는 방법*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{ /*이문서 에 해당하는 css 전부이다 문서 전체 적용이라는 선언 */
+    font-family: 'Montserrat';
+
+}
+
+body,h1,h2{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    min-width:fit-content;
+}
+
+h1{
+    font-size:36px;
+    font-weight: bold;
+    font-style:italic; /*글씨 체를 바꾸는 방법 font-style: 글씨체;*/
+}
+h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color:#282828;
+    border-bottom: 1px solid #ebebeb; /*border 아래쪽만 선 설정하고 싶을때 border-bottom: 두꼐 방식 색깔;*/
+    margin-bottom: 20px; /*border 바깥쪽을 마진 이라 하기 때문에 마진 크기의 아래쪽을 조정할때는 margin-bottom: 크기px;*/
+    padding-bottom: 5px;
+}
+footer{ 
+    text-align:center; /*text-align: 텍스트를 정렬할 위치;*/
+    background-color:#1e1e1e; /*배경색을 설정할수 있는 걸러*/
+    color:#919191; /*글씨 색을 결정하는 요소*/
+    /*같은 태그의 내용은 모두 똑같이 표현된다.*/
+    font-size:12px;
+    /*padding: 5px;*/
+}
+p{
+    font-size:  18px; /*글씨 크기를 결정하는 css 코드 px =picture element*/
+    font-weight: bold;
+    /*30px이면 충분히 읽을 만한 크기가 나온다.*/
+}
+
+.mainbox{
+    border: 1px solid #ebebeb;  /*border:두께 방식 색깔* 박스 테두리를 결정하는 방법*/
+    width:auto; /*width:박스의 크기를 결정하는 요소  + auto 로 하면 자동으로 창 크기에 맞춰줌*/
+    text-align: right; /*박스 안에 text 만 정렬한다는 점 주의!!*/
+    margin-left: auto; /*margin-left : div 을 가운데 정렬하기 위해 */
+    margin-right:auto; /*margin-right: div 을 가운데 정렬하기 위해 */
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.1);
+    /*그림자 넣기
+    box-shadow : 가로축 그림자(값이 양수이면 오른쪽으로 그림자가 뻗어 나감 , 음수이면 왼쪽으로 뻗어 나간다.) ,
+    y축으로 그림자 이동 ,그림자의 흐림 정도 , 그림자의 퍼짐도 
+    그림자의 색: rgba(red,green,blue,투명도);
+    0은 아예 없는 검정색 255: 가장 밝은 부분
+    마지막 매개변수는 투명도를 나타낸다.
+    */
+} 
+
+.name-text{
+    font-size:16px; /*font-size 지정 : font-size:;*/
+    color:#7c7c7c;
+    font-weight: bold; /*font 두께 지정 : font-weight: 방식;*/
+}
+.about-me-text{
+    font-size:10px;
+    line-height: 16px; /*줄간 간격 을 정하는 코드 160% = 16px 이 적당*/
+}
+
+section{
+    margin-bottom:24px;
+
+}
+.title-text{
+    float:left;/*text 를 띄운다는 느낌이다 오른쪽으로 띄울지 왼쪽으로 뜨울지 결정*/
+    text-align: left;/*text 정렬 코드 */
+    font-size:11px;
+    font-weight: bold;
+    color:#282828;
+
+
+}
+.year-text{
+    float:right; /*text 를 띄운다는 느낌이다 오른쪽으로 띄울지 왼쪽으로 뜨울지 결정*/
+    text-align:right;/*text 정렬 코드 */
+    font-size: 11px;
+    font-weight:bold;
+    color:#282828;
+}
+
+.float-wrap{ /*가두리 작업 양식*/
+    overflow:hidden;  /*overflow float 로 띄워진 요소들을 다 묶어주고 이 이후에 오는 요소들은 막아주는(hidden) 형식이다. */
+}
+
+.desc-text{
+    text-align: left;
+    font-size:9px;   
+}
+.desc-subtext{
+    text-align: left;
+    font-size:9px;
+    color:#282828;
+    padding-left:16px;        /*들여쓰기를 할떄는 padding 이 제일 좋다*/
+}
+.big-font{ /*class name tag 방식 을 이용하고 싶다면 .name */
+    font-size: 40px;
+
+}
+.small-font{
+    font-size:15px;
+}
+.title-box{
+    text-align: right;
+}
+.sns-img{
+    
+    width:20px;
+    height: 20px;
+}
+.sns-wrap{
+    text-align:right;
+}

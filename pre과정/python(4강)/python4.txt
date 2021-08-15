@@ -1,0 +1,60 @@
+open api?
+인터넷 이용자가 웹 검색및 사용자 인터페이스를 직접 응용프로그래밍과 서비스를
+개발할수 있도록 공개된 API 
+-> 인터넷으로 얻어온 데이터를 우리가 가져올수 있도록 만든 도구 
+
+해당 업체에서 제공하는 key 가 필요하다 
+
+import requests
+url = ""
+
+res = requests.get(url)
+text =res.text
+MD_json = json.loads(text)
+
+print(json.dumps(MD_json,indent = 4,sort_key = True)) #데이터 를 확인하는 방법
+
+print(MD_json.keys())
+
+print(MD_json['boxofficeresult'].keys())
+
+for i in MD_json['boxofficeResult']['dailyBoxOfficeList']:
+       print(i['rank'],i['rankOldAndNew'],i['movieNm'],i['salesAmt'])
+
+공공 데이터 를 가져오는 방법 
+참고문서와 url 이 중요 
+요청 url 과 응답 필드를 확인 가능하고 key 값이 없다 공공데이터 홈페이지 에는
+
+
+
+
+
+
+
+
+
+json? -> javascripts object Notation 의 약자이다 
+자바 스크립트 프로그래밍언어 를 기반으로 
+데이터를 효율적으로 저장하고 교환하는데 사용하는 데이터 형식이다 
+이름 & 값 의 집합 , 정렬된 값의 리스트  가 있다. 
+
+이떄 파이썬에 리스트 와 튜플은 JSON 으로 가면 array 로 바뀌고 
+반대로 JSON 의 array 에서 파이썬으로 바뀌면 다시 list 로 변경된다.
+
+import json 
+
+json 형식의 데이터를 열어 파이썬 객체로 읽어주는 방법 
+with open('json 파일 이름') as(별칭) json_file:
+	json_data = json.load(json_file) #load 함수로 불러와서 파이썬 객체로 저장
+
+json_data
+
+파이썬 객체를 json 형태로 변환하는 방법 
+st_json = json.dumps(파이썬 이름,indent= 정수(들여쓰기설정), sort_key = True(정렬)) 
+st_json 
+-> 생각보다 가독성이 떨어진다 
+
+
+
+딕셔너리 자료형 
+키와 값을 가지는 자료형 
